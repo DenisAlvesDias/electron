@@ -1,11 +1,12 @@
 {
   "name": "br.com.onesolucoes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "One Solucoes",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
+    "dist": "electron-builder",
     "deploy": "electron-builder build --win --publish always"
   },
   "author": "One",
