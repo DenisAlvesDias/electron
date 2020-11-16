@@ -1,0 +1,24 @@
+{
+  "name": "br.com.onesolucoes",
+  "version": "1.0.0",
+  "description": "One Solucoes",
+  "main": "index.html",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder build  --win --publish never",
+    "deploy": "electron-builder build  --win --publish always"
+  },
+  "author": "One",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DenisAlvesDias/electron.git"
+  }
+}
