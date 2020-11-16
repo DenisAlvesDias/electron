@@ -1,12 +1,12 @@
 {
   "name": "br.com.onesolucoes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One Solucoes",
-  "main": "index.html",
+  "main": "main.js",
   "scripts": {
-    "start": "electron main.js",
-    "build": "electron-builder build  --win --publish never",
-    "deploy": "electron-builder build  --win --publish always"
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
   },
   "author": "One",
   "license": "ISC",
@@ -16,6 +16,10 @@
   },
   "dependencies": {
     "electron-updater": "^4.3.5"
+  },
+  "build": {
+    "asar": "true",
+    "productName": "Electron"
   },
   "repository": {
     "type": "git",
